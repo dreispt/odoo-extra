@@ -17,6 +17,8 @@ install:
   - travis_install_nightly
   - printf '[options]\n\nrunning_env = dev' > ${HOME}/.openerp_serverrc
 
+  - git clone https://github.com/OCA/margin-analysis.git $HOME/margin-analysis -b 7.0
+
 script:
   - travis_run_tests
 
